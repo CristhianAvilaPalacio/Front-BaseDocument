@@ -1,0 +1,40 @@
+.jumbotron { 
+    background-color: #8c8c8c !important;
+    color: #FFF !important;
+	font-family: Helvetica;
+	text-align: center !important;
+}
+
+div, h2{
+	font-family: Helvetica;
+}
+
+h3{
+	font-weight: normal;
+}
+
+.logoMin {
+	font-size: 120px;
+	font-size: 1vw !important;
+	color:#8c8c8c;
+}
+
+table, td, th {    
+    border: 2px solid #ddd;
+    text-align: left;
+	font-family: Helvetica;
+}
+
+th {
+	color:#FFF;
+	background-color: #acacac;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}

@@ -1,0 +1,124 @@
+<html5>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen">
+        <link rel="stylesheet" href="css/dataTables/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/indexPrint.css" media="print">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <script type="text/javascript" src="js/Config/jquery.min.js"></script>
+        <script type="text/javascript" src="js/Config/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/request.js"></script>
+        <script type="text/javascript" src="js/Config/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/Qr/getQrStatus.js"></script>
+        <script type="text/javascript" src="js/Config/globalConfig.js"></script>
+    </head>
+    <body onload=loadQr()>
+        <div class="jumbotron" id="title">
+            <h1>Documento Base</h1>
+            <p>3dves</p> 
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" id ="LineBar">
+        <div class="header">
+            <div class="navbar-header logoCompany">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="report()">Tipo de Reporte</button>
+                            <div class="dropdown-content" id="Reportes">
+                                <a href="index.html">Reporte por Modulos</a>
+                                <a href="CatalogoMaquinas.html">Reporte por Equipo</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="administrar()">Administrar</button>
+                            <div class="dropdown-content" id="Administrar">
+                                <a href="ValidarInformacion.html">Validar informacion</a>
+                                <a href="">Subir recursos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>
+                            <input placeholder="User" class="form-control input-sm">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="password" placeholder="Password" class="form-control input-sm">
+                        </label>
+                    </li>
+                    <li><a href="#login">SIGN IN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div id="header">
+            <center><h1>Estado de Qr <a href="" class="glyphicon glyphicon-print" onclick="printWindow()"></a></h1></center>
+            <center><h4 id="date">Proyecto: Acueducto Fecha: </h4></center>
+        </div>
+        <div id ="contenedor">
+            <div id="loader" class="loader">Loading...</div>
+        </div>
+        <div id="Stadistics" class="container-fluid">
+            <div>
+                <center><h2>Estadisticas</h2></center>            
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3 id="TotalEquipos">Numero total de equipos: </h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3 id="TotalExisteQR">Numero total de existencias de Qr: </h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3 id="TotalDelivered">Numero total de Qr entregados: </h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3 id="TotalNearToMachine">Numero total de Qr cerca a la maquina: </h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3 id="TotalTagLegible">Numero total de Tags legibles: </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="QrList">
+            <center><h2>Lista de estado de Qr</h2></center>
+            <table id="qr" class="table table-striped table-bordered" style="width: 90%; margin: auto;">
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>Existe codigo Qr</th>
+                        <th>Esta entregado</th>
+                        <th>Cerca de la maquina</th>
+                        <th>Tag legible</th>
+                    </tr>
+                </thead>
+                <tbody>
+            </table>
+        </div>
+        <div id="PrintView">
+            <center><h2>Lista de estado de Qr</h2></center>
+            <table id="qrPrint" class="table table-striped table-bordered" style="width: 90%; margin: auto;">
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>Existe codigo Qr</th>
+                        <th>Esta entregado</th>
+                        <th>Cerca de la maquina</th>
+                        <th>Tag legible</th>
+                    </tr>
+                </thead>
+                <tbody>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <center>3Dves. 3D Virtual Enviroment Solutions. Todos los derechos reservados. 2017</center>
+    </footer>
+</html5>

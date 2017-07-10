@@ -1,0 +1,121 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/Config/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Config/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/config/globalConfig.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Documento Base</h1>
+        <p>3dves</p>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="header">
+            <div class="navbar-header logoCompany">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="report()">Tipo de Reporte</button>
+                            <div class="dropdown-content" id="Reportes">
+                                <a href="index.html">Reporte por Modulos</a>
+                                <a href="CatalogoMaquinas.html">Reporte por Equipo</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="administrar()">Administrar</button>
+                            <div class="dropdown-content" id="Administrar">
+                                <a href="ValidarInformacion.html">Validar informacion</a>
+                                <a href="">Subir recursos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>
+                            <input placeholder="User" class="form-control input-sm"></label></li>
+                    <li>
+                        <label>
+                            <input type="password" placeholder="Password" class="form-control input-sm"></label></li>
+                    <li><a href="#login">SIGN IN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <center><h1>Reporte por Modulos</h1></center>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div onclick="location.href='Documents.html';" class="col-sm-offset-1 col-sm-4 modules">
+                <div class="col-sm-9">
+                    <h1>Documentos</h1>
+                    <p>Informe que visualiza los nombres de los documentos por equipos.</p>
+                </div>
+                <div class="col-sm-3">
+                    <span class="glyphicon glyphicon-file logo"></span>
+                </div>
+            </div>
+            <div onclick="location.href='Qr.html';" class="col-sm-offset-1 col-sm-4 modules">
+                <div class="col-sm-9">
+                    <h1>Qr</h1>
+                    <p>Informe que reporta la existencia de Qr de un equipo, si este se ha entregado al cliente y si el Qr direcciona cerca al equipo en el modelo virtual.</p>
+                </div>
+                <div class="col-sm-3">
+                    <span class="glyphicon glyphicon-qrcode logo"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div onclick="location.href='Informes.html';" class="col-sm-offset-1 col-sm-4 modules">
+                <div class="col-sm-9">
+                    <h1>Informacion de equipos</h1>
+                    <p>Informe que visualiza por equipo si el escaneo fue mediante Lidar o Faro, si fue modelado, si tiene escena de detalle.</p>
+                </div>
+                <div class="col-sm-3">
+                    <span class="glyphicon glyphicon-th-list logo"></span>
+                </div>
+            </div>
+            <div onclick="location.href='Reportes.html';" class="col-sm-offset-1 col-sm-4 modules">
+                <div class="col-sm-9">
+                    <h1>Reportes</h1>
+                    <p>Lista los nombres de los reportes por equipo</p>
+                </div>
+                <div class="col-sm-3">
+                    <span class="glyphicon glyphicon-signal logo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div onclick="location.href='Recursos.html';" class="col-sm-offset-1 col-sm-4 modules">
+                <div class="col-sm-9">
+                    <h1>Informacion de recursos</h1>
+                    <p>Informe que visualiza por equipo si el equipo posee Imagenes y videos y la cantidad de estos.</p>
+                </div>
+                <div class="col-sm-3">
+                    <span class="glyphicon glyphicon-folder-open logo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<table id="documents" class="display table table-striped" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Path</th>
+                </tr>
+            </thead>
+            onload="loadDocuments()"
+        </table>-->
+</body>
+</html>

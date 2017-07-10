@@ -1,0 +1,92 @@
+<html5>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <script type="text/javascript" src = "http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/request.js"></script>
+        <script type="text/javascript" src="js/config/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/Qr/updateQrValues.js"></script>
+        <script type="text/javascript" src="js/config/globalConfig.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body onload=loadEntities()>
+        <div class="jumbotron" id="title">
+            <h1>Documento Base</h1>
+            <p>3dves</p> 
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" id ="LineBar">
+            <div class="header">
+                <div class="navbar-header logoCompany">
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" onclick="guardarDatos()">Enviar Datos</button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="index.html">Reporte por Modulos</a>
+                                    <a href="CatalogoMaquinas.html">Reporte por Equipo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" onclick="report()">Tipo de Reporte</button>
+                                <div class="dropdown-content" id="Reportes">
+                                    <a href="index.html">Reporte por Modulos</a>
+                                    <a href="ViewForEntity">Reporte por Equipo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" onclick="administrar()">Administrar</button>
+                                <div class="dropdown-content" id="Administrar">
+                                    <a href="ValidarInformacion.html">Validar informacion</a>
+                                    <a href="">Subir recursos</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                <input placeholder="User" class="form-control input-sm">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="password" placeholder="Password" class="form-control input-sm">
+                            </label>
+                        </li>
+                        <li><a href="#login">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="header">        
+            <center><h4 id="date">Proyecto: Acueducto Fecha: </h4></center>
+        </div>
+        <div id ="contenedor">
+            <div id="loader" class="loader">Loading...</div>
+        </div>
+        <center><h2>Lista de estado de Qr</h2></center>
+        <table id="qr" class="table table-striped table-bordered" style="width: 90%; margin: auto;">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Equipo</th>
+                    <th>Existe codigo Qr</th>
+                    <th>Esta entregado</th>
+                    <th>Cerca de la maquina</th>
+                    <th>Tag legible</th>
+                </tr>
+            </thead>
+            <tbody>
+        </table>
+    </body>
+    <footer>
+        <center>3Dves. 3D Virtual Enviroment Solutions. Todos los derechos reservados. 2017</center>
+    </footer>
+</html5>

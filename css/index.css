@@ -1,0 +1,179 @@
+.jumbotron { 
+    background-color: #8c8c8c !important;
+    color: #ffffff !important;
+	text-align: center !important;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #8c8c8c !important;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.header{
+	margin:0px 20px 0px 25px;
+}
+
+li select{
+	margin: 0px 10px 0px 10px;
+}
+
+.nav li label{
+	color: #000 !important;
+    margin: 12px 10px 0px 10px;
+}
+
+.navbar li a, .navbar .navbar-brand{
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #00227F !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.tables{
+	display:table;
+}
+.center{
+	display: table-cell;
+	vertical-align: middle;
+}
+a:hover{
+	text-decoration:none;
+	color: grey;
+}
+
+.logo {
+	font-size:120px;
+	font-size: 6vw;
+	color:#8c8c8c;
+}
+
+
+.bg-grey {
+      background-color: #f6f6f6;
+ }
+
+.logoCompany{
+	padding: 10px 0px 0px 0px;
+	width: 100px;
+	height: 50px;
+	background-image: url("images/3dves-Logo.jpg");
+	background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+.container-fluid{
+	padding-top: 30px;
+	padding-bottom:30px;
+}
+
+p{
+	font-size: 130%;
+}
+
+table{
+	width: 90%;
+    margin: auto;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #8c8c8c;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+	color: #8c8c8c;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #8c8c8c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.modules{
+    cursor: pointer
+
+}
+.modules:hover{
+   background-color: gray;
+   color: #f6f6f6;     
+
+}
+.modules:hover span{ 
+   color: #f6f6f6;    
+}
+
+.modules span{
+    padding: 10px;
+}
+
+.rowColor:hover{
+	background-color: gray !important;
+	color: #f6f6f6 !important;
+}
+
+.border{
+    border: 1px solid gray;
+}
